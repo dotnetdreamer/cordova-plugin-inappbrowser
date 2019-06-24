@@ -440,7 +440,6 @@ static CDVUIInAppBrowser* instance = nil;
 }
 
 - (BOOL)isAllowedScheme:(NSString*)scheme
-
 {
     NSString* allowedSchemesPreference = [self settingForKey:@"AllowedSchemes"];
     if (allowedSchemesPreference == nil || [allowedSchemesPreference isEqualToString:@""]) {
